@@ -1,4 +1,4 @@
-const auth = prompt()
+const auth = prompt('Пароль')
 const ADMIN_PASSWORD = 'jqueryismyjam';
 let message;
 console.log(auth)

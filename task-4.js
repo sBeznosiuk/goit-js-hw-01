@@ -1,4 +1,4 @@
-let quantity = prompt();
+let quantity = prompt('Дроны');
 const credits = 23580;
 const pricePerDroid = 3000;
 const totalPrice = quantity * pricePerDroid;

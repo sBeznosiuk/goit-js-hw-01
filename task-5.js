@@ -1,11 +1,10 @@
-const countryInput = prompt();
+const countryInput = prompt('Страны');
 const country = countryInput.toUpperCase();
 let cost;
 let message;
 
 if (countryInput === null) {
-    message = 'Отменено пользователем!';
-    console.log(message);
+    
 } else {
      switch (country) {
         case 'КИТАЙ':
@@ -36,11 +35,17 @@ if (countryInput === null) {
             cost = 120;
             message = `Доставка в ${country} будет стоить ${cost} кредитов`;
             console.log(message);
-            break;
+             break;
+         
+         case null:
+             
+             message = 'В вашей стране доставка не доступна';
+             console.log(message)
+             break;
      
         default:
-            message = 'В вашей стране доставка не доступна';
-            console.log(message)
+             message = 'Отменено пользователем!';
+             console.log(message);
     }
 }
 

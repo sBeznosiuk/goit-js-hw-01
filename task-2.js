@@ -1,18 +1,22 @@
 const total = 100;
-let ordered = 50;
+let ordered;
 
-console.log('Заказ оформлен, с вами свяжется менеджер', ordered <= total);
-console.log('На складе недостаточно товаров!', ordered > total);
+function isConfirmed (ordered) {
+     if (ordered > total) {
+    console.log('На складе недостаточно товаров!')
+     } else {
+    console.log('Заказ оформлен, с вами свяжется менеджер')
+    }
+}
 
 ordered = 20;
-console.log('Заказ оформлен, с вами свяжется менеджер', ordered <= total);
-console.log('На складе недостаточно товаров!', ordered > total);
+isConfirmed(ordered);
+
+ordered = 50;
+isConfirmed(ordered);
 
 ordered = 80;
-console.log('Заказ оформлен, с вами свяжется менеджер', ordered <= total);
-console.log('На складе недостаточно товаров!', ordered > total);
+isConfirmed(ordered);
 
 ordered = 130;
-console.log('Заказ оформлен, с вами свяжется менеджер', ordered <= total);
-console.log('На складе недостаточно товаров!', ordered > total);
-
+isConfirmed(ordered);
