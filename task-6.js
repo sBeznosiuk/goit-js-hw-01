@@ -9,7 +9,7 @@ while (true) {
 
     input = Number(input);
 
-    if (Number.isNaN((input))) {
+    if (Number.isNaN(input)) {
         alert('Было введено не число, попробуйте еще раз');
         continue;
     }
