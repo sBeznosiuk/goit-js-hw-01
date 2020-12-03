@@ -38,7 +38,6 @@ if (countryInput === null) {
              break;
          
          case null:
-             
              message = 'В вашей стране доставка не доступна';
              console.log(message)
              break;
